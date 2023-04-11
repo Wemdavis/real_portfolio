@@ -1,5 +1,6 @@
 const calculator = document.getElementById('calculator');
 const display = document.getElementById('display');
+const plusMinusBtn = document.getElementById('plus-minus');
 let previousOperand = '';
 let currentOperand = '';
 let operator = null;
@@ -26,9 +27,15 @@ function chooseOperator(selectedOperator) {
   if (currentOperand === '') {
     return;
   }
+  if (selectedOperator === '+/-') {
+    currentOperand = (parseFloat(currentOperand) * -1).toString();
+    display.innerText = currentOperand;
+    return;
+  }
   if (previousOperand !== '') {
     compute();
   }
+ 
   operator = selectedOperator;
   previousOperand = currentOperand;
   currentOperand = '';
@@ -54,9 +61,13 @@ function compute() {
     case '/':
       result = previous / current;
       break;
+      case '+/-':
+        result = current * -1;
+        break;
     default:
       return;
   }
+  
   currentOperand = result.toFixed(4).toString();
   previousOperand = '';
   operator = null;
@@ -80,6 +91,7 @@ function addEventListeners() {
   document.getElementById('subtract').addEventListener('click', () => chooseOperator('-'));
   document.getElementById('multiply').addEventListener('click', () => chooseOperator('*'));
   document.getElementById('divide').addEventListener('click', () => chooseOperator('/'));
-  document.getElementById('equals').addEventListener('click', compute);}
-
+  document.getElementById('equals').addEventListener('click', compute);
+  document.getElementById('plus-minus').addEventListener('click', () => chooseOperator('+/-'));
+}
 addEventListeners();
