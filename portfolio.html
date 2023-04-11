@@ -12,16 +12,16 @@
     <title>portfolio website</title>
 </head>
 <body class="main-cont"> 
+     <!--------------home-page---------------->
     <header class="section home-section header active" id="home">
-        <!--------------home-page---------------->
-        <div class="header-cont">
+        <div class="header-wrapper">
             <div class="left-header">
                 <h1 class="name">Hi, 
                     <span>I'm Bukola</span></h1>
                     <br>
                     <h2>A Frontend Web Developer</h2>
                     <br>
-                <p>With mid level experience in web design and development knowledge, producing quality work</p>
+                <p>With entry-level experience in web design and development knowledge, producing quality work</p>
                 <br />
                 <div class="btn-con">
                 <a href="" class="main-btn">
@@ -42,8 +42,8 @@
     
     <main>
         <section class="section bar-section home" id="correction"></section>
+        <!--------------about-page---------------->
         <section class="section about-section about" id="about">
-           <!--------------about-page---------------->
             <div class="about-wrapper">
                 <div class="left-about">
                     <div class="main-title">
@@ -147,17 +147,27 @@
                 </div>
             </div>
         </section>
-        <section class="section portfolio-section projects" id="projects">
-            <!--------------projects-page---------------->
+         <!--------------projects-page---------------->
+        <section class="section project-section projects" id="projects">
+            <div class="project-wrapper">
             <div class="main-title">
                 <h2>My projects</h2>
             </div>
+            <p class="project-text">Here are some of my completed projects</p>
+            <div class="project">
+                <div class="project-item">
+                    <div class="img">
+                        <img src="project-images/calculator.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
+        <!--------------contact-page---------------->
         <section class="section contact-section contacts" id="contacts">
-            <!--------------contact-page---------------->
             <div class="contact-wrapper">
                 <div class="left-contact">
-                    <h2>Contact Me</h2>
+                    <h2>Contact Info</h2>
                     <p>fasununbukola@gmail.com</p>
                     <p></p>
                     <div class="social-icons" data-id="">
@@ -167,31 +177,34 @@
                     </div>
                     </div>
                         <div class="right-contact">
-                                <form  action="your_form_handling_script.php*" method="POST">
-                                    <div class="form-group">
-                                        <label for="name">Name:</label>
-                                        <input type="text" id="name" name="name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="email" id="email" name="email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Message:</label>
-                                        <textarea id="message" name="message" rows="5" required></textarea>
-                                    </div>
-                                    <button class="btn" type="submit">Send Message</button>
-                                </form>
-                            </div>
+                                <h2>Contact Form</h2>
+                                <form id="contact-form">
+                                  <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                  </div>
+                                  <div class="btn-con">
+                                    <a href="" class="main-btn">
+                                        <span class="btn-text">Send Message</span>
+                                        <span class="btn-icon"><i class="fa fa-download"></i></span>
+                                    </a>
                         </div>
                     </div>
-                </div>
+                                </form>
+                              </div>
             </div>
         </section>
         </main>
-
-    <div class="controls">
         <!--------------Icons----------------->
+    <div class="controls">
         
         <div class="cont control-1 active-btn" data-id="home">
             <i class="fa fa-home"></i>

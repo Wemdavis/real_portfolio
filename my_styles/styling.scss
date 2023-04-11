@@ -116,7 +116,7 @@
 }
   }
   /*--------------home-page----------------*/
-  .header-cont {
+  .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,12 +319,47 @@
 
 /*--------------contact-page----------------*/
 .contact-wrapper {
+  display: flex;
+  justify-content: space-between;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
-
+    
+.left-contact{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+.right-contact{ 
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  width: 50%;
+  background-color: var(--color-white);
+ h2 {
+  margin-bottom: 10px;
+}
+.form-group {
+  margin-bottom: 20px;
+ label{
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+}
+}
 }
 
 .btn-con{
