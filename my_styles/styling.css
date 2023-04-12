@@ -60,7 +60,7 @@ section {
 .home-section,
 .bar-section,
 .about-section,
-.portfolio-section,
+.project-section,
 .contact-section {
   display: none;
   transform: translateY(0) scale(1);
@@ -191,7 +191,7 @@ section {
 .about-wrapper .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 1.5rem;
+  margin-top: 5rem;
   margin-right: -15rem;
   grid-gap: 2rem;
 }
@@ -318,6 +318,66 @@ section {
   width: 40%;
   height: 1px;
   background-color: var();
+}
+
+/*--------------projects-page----------------*/
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+.project-wrapper left-project {
+  margin-top: 5rem;
+  margin-left: -5rem;
+}
+.project-wrapper left-project .main-title {
+  text-align: left;
+}
+.project-wrapper left-project .main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--color-white);
+}
+.project-wrapper left-project .main-title h2 span {
+  color: var(--color-blue);
+}
+.project-wrapper left-project .main-title p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-white);
+  text-align: left;
+}
+.project-wrapper .right-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+  margin-right: -15rem;
+  grid-gap: 2rem;
+}
+.project-wrapper .right-project .img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--color-grey);
+  border-radius: 5px;
+  margin-left: 8rem;
+  background-color: var(--color-grey);
+  transition: all 0.4s ease-in-out;
+}
+.project-wrapper .right-project .img:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--color-grey2);
+}
+.project-wrapper .right-project .img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+.project-wrapper .right-project .img img:hover {
+  filter: grayscale(0);
 }
 
 /*--------------contact-page----------------*/
