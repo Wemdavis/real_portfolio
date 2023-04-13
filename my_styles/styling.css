@@ -58,7 +58,6 @@ section {
 }
 
 .home-section,
-.bar-section,
 .about-section,
 .project-section,
 .contact-section {
@@ -165,8 +164,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 12rem;
-  margin-top: -3rem;
+  padding-left: 14rem;
+  margin-top: 3rem;
 }
 .header-wrapper .left-header .name {
   margin: 0;
@@ -183,7 +182,6 @@ section {
 
 /*--------------about-page----------------*/
 .about-wrapper {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
@@ -225,23 +223,21 @@ section {
 }
 .about-wrapper .left-about {
   margin-top: 5rem;
-  margin-left: -5rem;
+  margin-left: -4rem;
 }
-.about-wrapper .left-about .main-title {
+.about-wrapper .left-about h1 {
   text-align: left;
-}
-.about-wrapper .left-about .main-title h2 {
   position: relative;
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--color-white);
 }
-.about-wrapper .left-about .main-title h2 span {
+.about-wrapper .left-about h1 span {
   color: var(--color-blue);
 }
-.about-wrapper .left-about .main-title p {
+.about-wrapper .left-about p {
+  margin: 1.5rem 0;
   line-height: 2rem;
-  padding: 1rem;
   color: var(--color-white);
   text-align: left;
 }
@@ -290,14 +286,18 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css,
-.about-stats .progress-bars .progress-bar .progress-con .progress html {
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
   width: 90%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript,
+.about-stats .progress-bars .progress-bar .progress-con .progress .jquery {
   width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
   width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .redux {
+  width: 50%;
 }
 
 .stats-title {
@@ -330,19 +330,17 @@ section {
   margin-top: 5rem;
   margin-left: -5rem;
 }
-.project-wrapper left-project .main-title {
+.project-wrapper left-project h1 {
   text-align: left;
-}
-.project-wrapper left-project .main-title h2 {
   position: relative;
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--color-white);
 }
-.project-wrapper left-project .main-title h2 span {
+.project-wrapper left-project h1 span {
   color: var(--color-blue);
 }
-.project-wrapper left-project .main-title p {
+.project-wrapper left-project p {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-white);
@@ -355,28 +353,24 @@ section {
   margin-right: -15rem;
   grid-gap: 2rem;
 }
-.project-wrapper .right-project .img {
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+.project-wrapper .right-project .project-con {
+  position: relative;
   border: 1px solid var(--color-grey);
   border-radius: 5px;
-  margin-left: 8rem;
-  background-color: var(--color-grey);
   transition: all 0.4s ease-in-out;
 }
-.project-wrapper .right-project .img:hover {
+.project-wrapper .right-project .project-con:hover {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-grey2);
 }
-.project-wrapper .right-project .img img {
+.project-wrapper .right-project img {
   width: 100%;
   height: auto;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
-.project-wrapper .right-project .img img:hover {
+.project-wrapper .right-project img:hover {
   filter: grayscale(0);
 }
 
