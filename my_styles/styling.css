@@ -117,7 +117,7 @@ section {
   pointer-events: none;
 }
 
-/*--------------home-page----------------*/
+/*--------------home-section----------------*/
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -180,7 +180,7 @@ section {
   line-height: 4rem;
 }
 
-/*--------------about-page----------------*/
+/*--------------about-section----------------*/
 .about-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -320,7 +320,7 @@ section {
   background-color: var();
 }
 
-/*--------------projects-page----------------*/
+/*--------------projects-section----------------*/
 .project-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -329,6 +329,7 @@ section {
 .project-wrapper left-project {
   margin-top: 5rem;
   margin-left: -5rem;
+  float: left;
 }
 .project-wrapper left-project h1 {
   text-align: left;
@@ -351,6 +352,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5rem;
   margin-right: -15rem;
+  float: right;
   grid-gap: 2rem;
 }
 .project-wrapper .right-project .project-con {
@@ -373,8 +375,19 @@ section {
 .project-wrapper .right-project img:hover {
   filter: grayscale(0);
 }
+.project-wrapper h2 {
+  color: var(--color-white);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.project-wrapper h2 span {
+  color: var(--color-secondary);
+}
 
-/*--------------contact-page----------------*/
+/*--------------contact-section----------------*/
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
@@ -418,6 +431,7 @@ section {
   font-size: 16px;
 }
 
+/*--------------independent-component----------------*/
 .btn-con {
   display: flex;
   align-self: flex-start;

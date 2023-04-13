@@ -114,7 +114,7 @@
   }
 }
   }
-  /*--------------home-page----------------*/
+  /*--------------home-section----------------*/
   .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -175,7 +175,7 @@
 }
   }
 
-  /*--------------about-page----------------*/
+  /*--------------about-section----------------*/
   .about-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -316,7 +316,7 @@
     }
 }
 
-/*--------------projects-page----------------*/
+/*--------------projects-section----------------*/
 .project-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -324,6 +324,7 @@
     left-project{
       margin-top: 5rem;
       margin-left: -5rem;
+      float: left;
             h1{
               text-align: left;
                 position: relative;
@@ -345,7 +346,8 @@
   display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 5rem;
-        margin-right: -15rem;;
+        margin-right: -15rem;
+        float: right;
         grid-gap: 2rem;
         .project-con{
           position: relative;
@@ -369,9 +371,21 @@
     }
   }
   }
+  h2{
+    color: var(--color-white);
+                  padding-left: 1rem;
+                  padding-top: 1rem;
+                  position: relative;
+                  text-transform: uppercase;
+                  font-size: 1.2rem;
+                  
+                  span{
+                    color: var(--color-secondary);
+                  }
+  }
 }
 
-/*--------------contact-page----------------*/
+/*--------------contact-section----------------*/
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
@@ -416,12 +430,12 @@ textarea{
 }
 }
 
+/*--------------independent-component----------------*/
 .btn-con{
     display: flex;
     align-self: flex-start;
     margin-top: 1.5rem;
 }
-
 .main-btn{
     border-radius: 30px;
     color: inherit;
