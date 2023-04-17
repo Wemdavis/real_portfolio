@@ -174,6 +174,7 @@ section {
 }
 .header-wrapper .left-header .name span {
   color: var(--color-blue);
+  font-size: 2rem;
 }
 .header-wrapper .left-header p {
   margin: 1.5rem 0;
@@ -182,25 +183,24 @@ section {
 
 /*--------------about-section----------------*/
 .about-wrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
-.about-wrapper h1 {
-  text-align: center;
+.about-wrapper .left-about {
+  margin-left: -5rem;
+  padding-left: -4rem;
+  margin-top: 5rem;
+}
+.about-wrapper .left-about h1 {
+  text-align: left;
+  position: relative;
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--color-white);
 }
-.about-wrapper h1 span {
+.about-wrapper .left-about h1 span {
   color: var(--color-blue);
-}
-.about-wrapper .left-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: -5rem;
-  padding-left: -4rem;
-  margin-top: 3rem;
 }
 .about-wrapper .left-about p {
   margin: 1.5rem 0;
@@ -216,8 +216,8 @@ section {
   grid-gap: 2rem;
 }
 .about-wrapper .right-about .about-con {
-  border: 1px solid var(--color-grey);
-  border-radius: 5px;
+  border: 1px solid var(--color-blue);
+  border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
 }
 .about-wrapper .right-about .about-con:hover {
@@ -325,18 +325,21 @@ section {
 /*--------------projects-section----------------*/
 .project-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-.project-wrapper h1 {
+.project-wrapper .main-title h1 {
   text-align: center;
   position: relative;
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--color-white);
 }
-.project-wrapper h1 span {
+.project-wrapper .main-title h1 span {
   color: var(--color-blue);
 }
-.project-wrapper p {
+.project-wrapper .main-title p {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-white);
@@ -344,12 +347,19 @@ section {
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 5rem;
-  margin-right: -15rem;
-  float: right;
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-container .project-con1,
+.project-container .project-con2,
+.project-container .project-con3,
+.project-container .project-con4,
+.project-container .project-con5,
+.project-container .project-con6 {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
 }
 .project-container .project-con {
   position: relative;
@@ -366,16 +376,15 @@ section {
   width: 100%;
   height: auto;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(0);
 }
 .project-container img:hover {
-  filter: grayscale(0);
+  filter: grayscale(100%);
 }
 
 h2 {
   color: var(--color-white);
   padding-left: 1rem;
-  padding-top: 1rem;
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
