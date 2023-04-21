@@ -171,6 +171,7 @@ section {
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  line-height: 2rem;
 }
 .header-wrapper .left-header .name span {
   color: var(--color-blue);
@@ -189,14 +190,14 @@ section {
 }
 .about-wrapper .left-about {
   margin-left: -5rem;
-  padding-left: -4rem;
   margin-top: 5rem;
 }
 .about-wrapper .left-about h1 {
   text-align: left;
   position: relative;
-  text-transform: uppercase;
   font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
   color: var(--color-white);
 }
 .about-wrapper .left-about h1 span {
@@ -216,7 +217,7 @@ section {
   grid-gap: 2rem;
 }
 .about-wrapper .right-about .about-con {
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-grey2);
   border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
 }
@@ -239,7 +240,7 @@ section {
   color: var(--color-secondary);
   padding-left: 1rem;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
@@ -258,7 +259,7 @@ section {
   flex-direction: column;
 }
 .about-stats .progress-bars .progress-bar .progress-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
 }
 .about-stats .progress-bars .progress-bar .progress-con {
@@ -303,7 +304,7 @@ section {
 }
 
 .stats-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
   font-size: 2rem;
   text-align: left;
@@ -319,11 +320,11 @@ section {
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var();
 }
 
 /*--------------projects-section----------------*/
 .project-wrapper {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -332,8 +333,9 @@ section {
 .project-wrapper .main-title h1 {
   text-align: center;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 3rem;
+  font-weight: 600;
   color: var(--color-white);
 }
 .project-wrapper .main-title h1 span {
@@ -347,25 +349,18 @@ section {
 }
 
 .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.project-container .project-con1,
-.project-container .project-con2,
-.project-container .project-con3,
-.project-container .project-con4,
-.project-container .project-con5,
-.project-container .project-con6 {
-  flex: 0 0 calc(33.33% - 10px);
-  margin: 5px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
 .project-container .project-con {
   position: relative;
-  border: 1px solid var(--color-grey);
+  border: 1px solid var(--color-grey2);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 .project-container .project-con:hover {
   cursor: default;
@@ -374,62 +369,68 @@ section {
 }
 .project-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(0);
 }
 .project-container img:hover {
   filter: grayscale(100%);
 }
-
-h2 {
+.project-container p {
   color: var(--color-white);
   padding-left: 1rem;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.2rem;
 }
-h2 span {
+.project-container p span {
   color: var(--color-secondary);
 }
 
 /*--------------contact-section----------------*/
 .contact-wrapper {
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-wrapper .main-title3 h1 {
   text-align: center;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-white);
 }
-.contact-wrapper .left-contact {
+.contact-wrapper .main-title3 h1 span {
+  color: var(--color-blue);
+}
+.contact-wrapper .main-title3 p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 3rem;
 }
-.contact-wrapper .left-contact h2 {
-  margin-bottom: 10px;
-}
-.contact-wrapper .right-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  background-color: var(--color-white);
-}
-.contact-wrapper .right-contact h2 {
-  margin-bottom: 10px;
-}
-.contact-wrapper .right-contact .form-group {
+
+.form-group {
   margin-bottom: 20px;
 }
-.contact-wrapper .right-contact .form-group label {
+.form-group label {
   display: block;
   margin-bottom: 5px;
 }
-.contact-wrapper .right-contact .form-group input,
-.contact-wrapper .right-contact .form-group textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -449,7 +450,7 @@ h2 span {
   color: inherit;
   font-weight: 600;
   position: relative;
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-grey2);
   display: flex;
   align-self: flex-start;
   display: flex;
