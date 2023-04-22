@@ -19,7 +19,7 @@
 body {
   background-color: var(--color-primary);
   font-family: "poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
@@ -96,7 +96,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
-  color: var(--color-grey) !important;
+  color: var(--color-grey2) !important;
 }
 .controls .cont {
   padding: 1rem;
@@ -113,7 +113,7 @@ section {
 }
 .controls .cont i {
   font-size: 1.2rem;
-  color: var(--color-grey);
+  color: var(--color-grey2);
   pointer-events: none;
 }
 
@@ -159,6 +159,7 @@ section {
 }
 .header-wrapper .right-header .img img:hover {
   filter: grayscale(100%);
+  background-color: var(--color-grey2);
 }
 .header-wrapper .left-header {
   display: flex;
@@ -166,20 +167,20 @@ section {
   justify-content: center;
   padding-left: 14rem;
   margin-top: 3rem;
-}
-.header-wrapper .left-header .name {
-  margin: 0;
-  padding: 0;
-  font-size: 2rem;
   line-height: 2rem;
 }
-.header-wrapper .left-header .name span {
+.header-wrapper .left-header h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+.header-wrapper .left-header h1 span {
   color: var(--color-blue);
   font-size: 2rem;
 }
 .header-wrapper .left-header p {
   margin: 1.5rem 0;
-  line-height: 2rem;
 }
 
 /*--------------about-section----------------*/
@@ -196,7 +197,7 @@ section {
   text-align: left;
   position: relative;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: capitalize;
   color: var(--color-white);
 }
@@ -225,6 +226,7 @@ section {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-grey2);
+  background-color: var(--color-grey2);
 }
 .about-wrapper .right-about .abt-text {
   justify-items: center;
@@ -335,7 +337,7 @@ section {
   position: relative;
   text-transform: capitalize;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--color-white);
 }
 .project-wrapper .main-title h1 span {
@@ -344,16 +346,18 @@ section {
 .project-wrapper .main-title p {
   line-height: 2rem;
   padding: 1rem;
+  font-weight: bold;
   color: var(--color-white);
   text-align: left;
 }
 
 .project-container {
-  margin-top: 2rem;
+  padding: 3rem;
+  margin-top: -1.2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
 }
 .project-container .project-con {
   position: relative;
@@ -361,11 +365,13 @@ section {
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   height: 100%;
+  width: 250px;
 }
 .project-container .project-con:hover {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-grey2);
+  background-color: var(--color-grey2);
 }
 .project-container img {
   width: 100%;
@@ -393,16 +399,19 @@ section {
 .contact-wrapper {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .contact-wrapper .main-title3 h1 {
   text-align: center;
   position: relative;
   text-transform: capitalize;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--color-white);
 }
 .contact-wrapper .main-title3 h1 span {
@@ -414,28 +423,48 @@ section {
   color: var(--color-white);
   text-align: left;
 }
-
-.contact-info {
+.contact-wrapper .contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: 1rem;
 }
-
-.form-group {
-  margin-bottom: 20px;
+.contact-wrapper .form-group {
+  margin-bottom: 1.25rem;
 }
-.form-group label {
+.contact-wrapper .form-group label {
   display: block;
   margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.form-group input,
-.form-group textarea {
+.contact-wrapper .form-group input,
+.contact-wrapper .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  background-color: var(--color-grey2);
+  border: 1px solid var(--color-grey2);
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 1rem;
+}
+.contact-wrapper .form-group input::before,
+.contact-wrapper .form-group textarea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+.contact-wrapper .form-group input:hover::before,
+.contact-wrapper .form-group textarea:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey2);
+  transform: translateY(0);
+  transition: all 0.4s ease-out;
 }
 
 /*--------------independent-component----------------*/
