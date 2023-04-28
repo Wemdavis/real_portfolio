@@ -39,7 +39,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
 }
 
 section {
@@ -119,9 +118,8 @@ section {
 
 /*--------------home-section----------------*/
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   height: 100%;
 }
 .header-wrapper .right-header {
@@ -143,9 +141,9 @@ section {
 }
 .header-wrapper .right-header .img {
   border-radius: var(--br-sm-2);
-  height: 80%;
-  width: 68%;
-  margin-left: 8rem;
+  height: 90%;
+  width: 60%;
+  margin-left: 14rem;
   background-color: var(--color-grey);
   transition: all 0.4s ease-in-out;
 }
@@ -165,14 +163,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 14rem;
-  margin-top: 3rem;
-  line-height: 2rem;
+  text-align: justify;
+  padding-left: 12rem;
+  padding-top: 2rem;
 }
 .header-wrapper .left-header h1 {
   margin: 0;
   padding: 0;
-  line-height: 2rem;
   font-size: 2rem;
 }
 .header-wrapper .left-header h1 span {
@@ -471,23 +468,21 @@ section {
 .btn-con {
   display: flex;
   align-self: flex-start;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .main-btn {
   border-radius: 30px;
   color: inherit;
-  font-weight: 600;
   position: relative;
   border: 1px solid var(--color-grey2);
-  display: flex;
-  align-self: flex-start;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 .main-btn .btn-text {
-  padding: 0 2rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
 }
 .main-btn .btn-icon {
   color: var(--color-blue);
@@ -512,4 +507,25 @@ section {
   background-color: var(--color-grey2);
   transform: translateY(0);
   transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    padding: 0;
+  }
+  header .left-header {
+    padding: 2rem !important;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .controls .cont {
+    margin: 1rem 0.3rem;
+  }
 }/*# sourceMappingURL=styling.css.map */
