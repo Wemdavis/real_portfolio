@@ -513,17 +513,18 @@ section {
   header {
     padding: 0;
   }
-  header .left-header {
+  header .right-header {
     padding: 2rem !important;
   }
   .controls {
     top: auto;
     bottom: 0;
-    flex-direction: row;
+    flex-direction: initial;
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    background-color: var(--color-white);
   }
   .controls .cont {
     margin: 1rem 0.3rem;
