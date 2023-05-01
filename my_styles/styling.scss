@@ -119,6 +119,7 @@ i {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  width: 100%;
 .right-header {
   display: flex;
   align-items: center;
@@ -137,8 +138,8 @@ i {
 .img {
   border-radius: var(--br-sm-2);
   height: 90%;
-  width: 60%;
-  margin-left: 14rem;
+  width: 68%;
+  margin-left: 9.5rem;
   background-color: var(--color-grey);
   transition: all .4s ease-in-out;
  img {
@@ -160,11 +161,13 @@ i {
   justify-content: center;
   text-align: justify;
   padding-left: 12rem;
- padding-top: 2rem;
+ padding-top: 1rem;
+ line-height: 2.5rem;
 h1 {
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  
  span {
   color: var(--color-blue);
   font-size: 2rem;
@@ -180,12 +183,14 @@ p{
 .about-wrapper{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-gap: 5rem;
+width: 100%;
+grid-gap: 9.5rem;
  .left-about{
-   margin-left: -5rem;
-   margin-top: 5rem;
+   margin-left: -6rem;
+   margin-top: 3rem;
+   line-height: 2.5rem;
+   text-align: justify;
    h1{
-     text-align: left;
      position: relative;
      font-size: 3rem;
      font-weight: bold;
@@ -197,17 +202,15 @@ grid-gap: 5rem;
    }
 p{
  margin: 1.5rem 0;
- line-height: 2rem;
  color: var(--color-white);
- text-align: left;
 }
 }
 .right-about{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   margin-top: 5rem;
+   margin-top: .5rem;
    margin-right: -15rem;;
-   grid-gap: 2rem;
+   grid-gap: 2.5rem;
    .about-con{
        border: 1px solid var(--color-grey2);
        border-radius: var(--br-sm-2);
@@ -241,8 +244,7 @@ p{
 }
 
 .about-stats{
-margin-left: -5rem;
-
+margin-left: -6rem;
 padding-bottom: 4rem;
 .progress-bars{
    display: grid;
@@ -487,6 +489,7 @@ font-size: 1rem;
   overflow: hidden;
 .btn-text{
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 0 .5rem;
 }
   .btn-icon{

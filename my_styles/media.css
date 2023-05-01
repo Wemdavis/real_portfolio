@@ -5,6 +5,9 @@
   header .right-header {
     padding: 2rem !important;
   }
+  header .left-header {
+    margin-left: 0 !important;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -13,7 +16,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-grey2);
   }
   .controls .cont {
     margin: 1rem 0.3rem;

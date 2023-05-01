@@ -121,6 +121,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  width: 100%;
 }
 .header-wrapper .right-header {
   display: flex;
@@ -142,8 +143,8 @@ section {
 .header-wrapper .right-header .img {
   border-radius: var(--br-sm-2);
   height: 90%;
-  width: 60%;
-  margin-left: 14rem;
+  width: 68%;
+  margin-left: 9.5rem;
   background-color: var(--color-grey);
   transition: all 0.4s ease-in-out;
 }
@@ -165,7 +166,8 @@ section {
   justify-content: center;
   text-align: justify;
   padding-left: 12rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  line-height: 2.5rem;
 }
 .header-wrapper .left-header h1 {
   margin: 0;
@@ -184,14 +186,16 @@ section {
 .about-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
+  width: 100%;
+  grid-gap: 9.5rem;
 }
 .about-wrapper .left-about {
-  margin-left: -5rem;
-  margin-top: 5rem;
+  margin-left: -6rem;
+  margin-top: 3rem;
+  line-height: 2.5rem;
+  text-align: justify;
 }
 .about-wrapper .left-about h1 {
-  text-align: left;
   position: relative;
   font-size: 3rem;
   font-weight: bold;
@@ -203,16 +207,14 @@ section {
 }
 .about-wrapper .left-about p {
   margin: 1.5rem 0;
-  line-height: 2rem;
   color: var(--color-white);
-  text-align: left;
 }
 .about-wrapper .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   margin-right: -15rem;
-  grid-gap: 2rem;
+  grid-gap: 2.5rem;
 }
 .about-wrapper .right-about .about-con {
   border: 1px solid var(--color-grey2);
@@ -245,7 +247,7 @@ section {
 }
 
 .about-stats {
-  margin-left: -5rem;
+  margin-left: -6rem;
   padding-bottom: 4rem;
 }
 .about-stats .progress-bars {
@@ -482,6 +484,7 @@ section {
 }
 .main-btn .btn-text {
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 0 0.5rem;
 }
 .main-btn .btn-icon {
@@ -516,6 +519,9 @@ section {
   header .right-header {
     padding: 2rem !important;
   }
+  header .left-header {
+    margin-left: 0 !important;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -524,7 +530,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-grey2);
   }
   .controls .cont {
     margin: 1rem 0.3rem;
