@@ -7,11 +7,11 @@
 }
 
 :root {
-  --color-primary: #343434;
+  --color-primary:#2a2e35;
   --color-secondary: #e3b39b;
   --color-blue: #00094B;
   --color-white: #EDEADE;
-  --color-grey: #2a2e35;
+  --color-grey: #343434;
   --color-grey2: #42413f;
   --br-sm-2: 14px;
 }
@@ -544,12 +544,18 @@ section {
     grid-template-columns: 1fr;
   }
   .left-about {
-    padding-top: 2.5rem;
-    margin-left: 0 !important;
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 2rem !important;
   }
   .right-about {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 90%;
     padding-left: 0;
+    grid-gap: 0.5rem;
+    margin-left: 2rem !important;
   }
   .right-about p {
     padding-right: 0;
@@ -558,7 +564,7 @@ section {
     grid-template-columns: 1fr;
   }
   .project-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6rem;
   }
   .section {

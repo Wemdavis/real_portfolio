@@ -29,12 +29,12 @@
 }
 .about-wrapper{
 grid-template-columns: 1fr;
-grid-gap: 2rem !important;
 }
 .left-about{
-padding-top: 5rem;
-margin-left: 2rem;
-text-align: center;
+  grid-row: 1;
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 2rem !important;
 }
 .right-about{
   grid-template-columns: repeat(2, 1fr);
