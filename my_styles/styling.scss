@@ -31,14 +31,13 @@ a {
   font-family: inherit;
 }
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 section {
   min-height: 100vh;
@@ -124,6 +123,7 @@ i {
   display: flex;
   align-items: center;
   position: relative;
+  margin-right: 0;
 .h-shape {
   transition: all .4s ease-in-out;
   width: 65%;
@@ -159,10 +159,10 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
-  padding-left: 12rem;
- padding-top: 1rem;
- line-height: 2.5rem;
+  text-align: left;
+  margin-left: 9.5rem;
+ padding-top: -3rem;
+ line-height: 3rem;
 h1 {
   margin: 0;
   padding: 0;
@@ -189,7 +189,7 @@ grid-gap: 9.5rem;
    margin-left: -6rem;
    margin-top: 3rem;
    line-height: 2.5rem;
-   text-align: justify;
+   text-align: left;
    h1{
      position: relative;
      font-size: 3rem;
@@ -223,7 +223,7 @@ p{
        }
    }
        .abt-text{
-         justify-items: center;
+         justify-content: center;
          align-items: center;
            padding: 1.5rem;
            display: flex;

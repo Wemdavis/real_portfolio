@@ -32,7 +32,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   position: relative;
@@ -127,6 +127,7 @@ section {
   display: flex;
   align-items: center;
   position: relative;
+  margin-right: 0;
 }
 .header-wrapper .right-header .h-shape {
   transition: all 0.4s ease-in-out;
@@ -164,10 +165,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
-  padding-left: 12rem;
-  padding-top: 1rem;
-  line-height: 2.5rem;
+  text-align: left;
+  margin-left: 9.5rem;
+  padding-top: -3rem;
+  line-height: 3rem;
 }
 .header-wrapper .left-header h1 {
   margin: 0;
@@ -193,7 +194,7 @@ section {
   margin-left: -6rem;
   margin-top: 3rem;
   line-height: 2.5rem;
-  text-align: justify;
+  text-align: left;
 }
 .about-wrapper .left-about h1 {
   position: relative;
@@ -228,7 +229,7 @@ section {
   background-color: var(--color-grey2);
 }
 .about-wrapper .right-about .abt-text {
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   padding: 1.5rem;
   display: flex;
@@ -512,27 +513,62 @@ section {
   transition: all 0.4s ease-out;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 705px) {
   header {
     padding: 0;
   }
-  header .right-header {
+  header .left-header {
     padding: 2rem !important;
   }
-  header .left-header {
+  .header-wrapper {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .right-header {
+    margin: 0;
+  }
+  .right-header .h-shape {
+    display: none;
+  }
+  .left-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 2rem !important;
+  }
+  .header-wrapper .right-header .img {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .left-about {
+    padding-top: 2.5rem;
     margin-left: 0 !important;
   }
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: initial;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey2);
+  .right-about {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
   }
-  .controls .cont {
-    margin: 1rem 0.3rem;
+  .right-about p {
+    padding-right: 0;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .project-wrapper {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+  }
+  .controls {
+    position: fixed;
+    z-index: 10;
+    top: 40%;
+    left: 3%;
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=styling.css.map */
