@@ -3,7 +3,7 @@
     padding: 0;
   }
   header .left-header {
-    padding: 2rem !important;
+    padding: 3rem !important;
   }
   .header-wrapper {
     grid-template-columns: 1fr;
@@ -11,6 +11,7 @@
   }
   .right-header {
     margin: 0;
+    width: 90%;
   }
   .right-header .h-shape {
     display: none;
@@ -18,39 +19,65 @@
   .left-header {
     grid-row: 1;
     width: 90%;
-    margin: 0 auto;
     margin-left: 2rem !important;
   }
   .header-wrapper .right-header .img {
     margin: 0 auto;
     width: 90%;
+    height: 100%;
+    margin-left: 4.8rem !important;
   }
   .about-wrapper {
     grid-template-columns: 1fr;
+    width: 90%;
+    grid-gap: 2.5rem !important;
   }
   .left-about {
     grid-row: 1;
-    width: 90%;
     margin: 0 auto;
-    margin-left: 2rem !important;
+    margin-left: 5rem !important;
+    padding-top: 0.5rem;
   }
   .right-about {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     width: 90%;
     padding-left: 0;
-    grid-gap: 0.5rem;
-    margin-left: 2rem !important;
+    margin-left: 5rem !important;
   }
   .right-about p {
     padding-right: 0;
+  }
+  .about-stats {
+    margin-left: 5rem !important;
   }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
   .project-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    width: 90%;
     padding-bottom: 6rem;
+  }
+  .main-title h1 {
+    text-align: left;
+  }
+  .main-title p {
+    text-align: left;
+  }
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    margin-left: 10rem !important;
+  }
+  .main-title3 h1 {
+    text-align: left;
+  }
+  .main-title3 p {
+    text-align: left;
+  }
+  .contact-info {
+    margin-left: 5rem !important;
   }
   .section {
     padding: 2rem 2.5rem;
@@ -58,7 +85,7 @@
   .controls {
     position: fixed;
     z-index: 10;
-    top: 40%;
+    top: 50%;
     left: 3%;
     margin-left: 0px;
   }

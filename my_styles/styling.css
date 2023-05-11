@@ -95,7 +95,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
-  color: var(--color-grey2) !important;
+  color: var(--color-grey) !important;
 }
 .controls .cont {
   padding: 1rem;
@@ -112,7 +112,7 @@ section {
 }
 .controls .cont i {
   font-size: 1.2rem;
-  color: var(--color-grey2);
+  color: var(--color-grey);
   pointer-events: none;
 }
 
@@ -145,7 +145,7 @@ section {
   border-radius: var(--br-sm-2);
   height: 90%;
   width: 68%;
-  margin-left: 9.5rem;
+  margin-left: 10.5rem;
   background-color: var(--color-grey);
   transition: all 0.4s ease-in-out;
 }
@@ -154,6 +154,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-left: 2.5rem;
   transition: all 0.4s ease-in-out;
   filter: grayscale(0);
 }
@@ -188,11 +189,12 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  grid-gap: 9.5rem;
+  height: 100%;
+  grid-gap: 10.5rem;
 }
 .about-wrapper .left-about {
-  margin-left: -6rem;
-  margin-top: 3rem;
+  margin-left: -8rem;
+  margin-top: 3.5rem;
   line-height: 2.5rem;
   text-align: left;
 }
@@ -214,8 +216,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 0.5rem;
-  margin-right: -15rem;
-  grid-gap: 2.5rem;
+  margin-right: -14.5rem;
+  grid-gap: 3rem;
 }
 .about-wrapper .right-about .about-con {
   border: 1px solid var(--color-grey2);
@@ -248,7 +250,7 @@ section {
 }
 
 .about-stats {
-  margin-left: -6rem;
+  margin-left: -8rem;
   padding-bottom: 4rem;
 }
 .about-stats .progress-bars {
@@ -348,7 +350,7 @@ section {
   padding: 1rem;
   font-weight: bold;
   color: var(--color-white);
-  text-align: left;
+  text-align: center;
 }
 
 .project-container {
@@ -357,12 +359,11 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 .project-container .project-con {
   position: relative;
-  border: 1px solid var(--color-grey2);
-  border-radius: 5px;
+  border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
   height: 100%;
   width: 250px;
@@ -375,9 +376,10 @@ section {
 }
 .project-container img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: var(--br-sm-2);
   transition: all 0.4s ease-in-out;
   filter: grayscale(0);
 }
@@ -518,7 +520,7 @@ section {
     padding: 0;
   }
   header .left-header {
-    padding: 2rem !important;
+    padding: 3rem !important;
   }
   .header-wrapper {
     grid-template-columns: 1fr;
@@ -526,6 +528,7 @@ section {
   }
   .right-header {
     margin: 0;
+    width: 90%;
   }
   .right-header .h-shape {
     display: none;
@@ -533,39 +536,65 @@ section {
   .left-header {
     grid-row: 1;
     width: 90%;
-    margin: 0 auto;
     margin-left: 2rem !important;
   }
   .header-wrapper .right-header .img {
     margin: 0 auto;
     width: 90%;
+    height: 100%;
+    margin-left: 4.8rem !important;
   }
   .about-wrapper {
     grid-template-columns: 1fr;
+    width: 90%;
+    grid-gap: 2.5rem !important;
   }
   .left-about {
     grid-row: 1;
-    width: 90%;
     margin: 0 auto;
-    margin-left: 2rem !important;
+    margin-left: 5rem !important;
+    padding-top: 0.5rem;
   }
   .right-about {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     width: 90%;
     padding-left: 0;
-    grid-gap: 0.5rem;
-    margin-left: 2rem !important;
+    margin-left: 5rem !important;
   }
   .right-about p {
     padding-right: 0;
+  }
+  .about-stats {
+    margin-left: 5rem !important;
   }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
   .project-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    width: 90%;
     padding-bottom: 6rem;
+  }
+  .main-title h1 {
+    text-align: left;
+  }
+  .main-title p {
+    text-align: left;
+  }
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    margin-left: 10rem !important;
+  }
+  .main-title3 h1 {
+    text-align: left;
+  }
+  .main-title3 p {
+    text-align: left;
+  }
+  .contact-info {
+    margin-left: 5rem !important;
   }
   .section {
     padding: 2rem 2.5rem;
@@ -573,7 +602,7 @@ section {
   .controls {
     position: fixed;
     z-index: 10;
-    top: 40%;
+    top: 50%;
     left: 3%;
     margin-left: 0px;
   }
