@@ -52,6 +52,7 @@ section {
   transition: all .4s ease-in-out;
   background-color: var(--color-primary);
 }
+.nav-section,
 .home-section,
 .about-section,
 .project-section,
@@ -76,7 +77,7 @@ section {
 /*--------------icons----------------*/
 .controls {
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   top: 50%;
   left: 3%;
   margin-left: 20px;
@@ -113,6 +114,7 @@ i {
 }
 }
 }
+
 /*--------------home-section----------------*/
 .header-wrapper {
   display: grid;
@@ -163,8 +165,9 @@ i {
   text-align: left;
   margin-left: 9.5rem;
  padding-top: -3rem;
- line-height: 3rem;
+ line-height: 2rem;
 h1 {
+  line-height: 3rem;
   margin: 0;
   padding: 0;
   font-size: 2rem;
@@ -202,7 +205,7 @@ grid-gap: 10.5rem;
          color: var(--color-blue);
        }
    }
-p{
+p{ 
  margin: 1.5rem 0;
  color: var(--color-white);
 }
@@ -361,7 +364,6 @@ grid-gap: 3rem;
       .project-con{
         position: relative;
        border-radius: var(--br-sm-2);
-       
         transition: all .4s ease-in-out;
         height: 100%;
         width: 250px;
