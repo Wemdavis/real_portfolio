@@ -423,7 +423,6 @@ section {
 }
 .contact-wrapper .main-title3 p {
   line-height: 2rem;
-  padding: 1rem;
   color: var(--color-white);
   text-align: left;
 }
@@ -564,8 +563,7 @@ section {
   .right-about {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    width: 100%;
-    max-width: 100px;
+    width: 90%;
     padding-left: 0;
     margin-left: 0 !important;
     -o-object-fit: cover;
@@ -583,12 +581,19 @@ section {
   }
   /*--------------projects-section----------------*/
   .project-wrapper {
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem !important;
-    margin-top: -2.5rem;
+    flex: 1 1 100%;
+    margin-top: 0.5rem !important;
+    width: 100%;
     padding-bottom: 6rem;
   }
   .project-wrapper .main-title {
+    margin: 0 auto;
+    margin-left: 0 !important;
+  }
+  .project-wrapper .main-title h1 {
+    text-align: left !important;
+  }
+  .project-wrapper .main-title p {
     text-align: left !important;
   }
   .project-container {
@@ -599,8 +604,29 @@ section {
     margin-left: 0 !important;
   }
   /*--------------contact-section----------------*/
+  contact-wrapper {
+    flex: 1 1 100%;
+    gap: 2rem;
+    width: 100%;
+  }
+  .main-title3 {
+    margin: 0 auto;
+    margin-left: 0 !important;
+    line-height: 5.5rem;
+  }
+  .main-title3 h1 {
+    margin-top: -2rem;
+    text-align: left !important;
+  }
+  .main-title3 p {
+    text-align: left !important;
+  }
   .contact-info {
     margin-left: 0 !important;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 2.5rem !important;
+    padding-bottom: 6rem;
   }
   .section {
     padding: 2rem 2.5rem;

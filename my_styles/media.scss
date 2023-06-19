@@ -66,13 +66,19 @@ p{
 }
 /*--------------projects-section----------------*/
 .project-wrapper{
-  grid-template-columns: 1fr;
-  grid-gap: .5rem !important;
-  margin-top: -2.5rem;
+  flex: 1 1 100%;
+  margin-top: .5rem !important;
+  width: 100%;
   padding-bottom: 6rem;
-
 .main-title{
-  text-align: left !important;
+  margin: 0 auto;
+    margin-left: 0 !important;
+  h1{
+    text-align: left !important;
+  }
+  p{
+    text-align: left !important;
+  }
 }
 }
 .project-container{ 
@@ -81,13 +87,37 @@ p{
   width: 100%;
   margin: 0 auto;
   margin-left: 0 !important;
+  
 
 }
 
 /*--------------contact-section----------------*/
+contact-wrapper{
+  flex: 1 1 100%;
+  gap: 2rem;
+  width: 100%;
+  }
+  .main-title3{
+    margin: 0 auto;
+    margin-left: 0 !important;
+    line-height: 5.5rem;
+    h1{
+      margin-top: -2rem;
+      text-align: left !important;
+    }
+    p{
+      text-align: left !important;
+    }
+  }
+
 .contact-info{
   margin-left: 0 !important;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-gap: 2.5rem !important;
+  padding-bottom: 6rem;
 }
+
 .section{
   padding: 2rem 2.5rem;
 }
