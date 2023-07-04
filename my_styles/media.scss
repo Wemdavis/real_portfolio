@@ -14,8 +14,7 @@
   
 .header-wrapper{
   grid-template-columns: 1fr;
-  gap: 2rem;
-  padding-bottom: 6rem;
+  @extend %common;
 }
 .right-header{
   margin: 0;

@@ -518,7 +518,7 @@ section {
 
 @media screen and (max-width: 705px) {
   /*--------------home-section----------------*/
-  .contact-info {
+  .contact-info, .header-wrapper {
     padding-bottom: 6rem;
     margin-left: 0 !important;
     grid-gap: 2.5rem !important;
@@ -531,8 +531,6 @@ section {
   }
   .header-wrapper {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding-bottom: 6rem;
   }
   .right-header {
     margin: 0;
