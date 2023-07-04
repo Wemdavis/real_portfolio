@@ -1,5 +1,10 @@
 @media screen and (max-width: 705px) {
   /*--------------home-section----------------*/
+  .contact-info {
+    padding-bottom: 6rem;
+    margin-left: 0 !important;
+    grid-gap: 2.5rem !important;
+  }
   header {
     padding: 0;
   }
@@ -104,11 +109,8 @@
     text-align: left !important;
   }
   .contact-info {
-    margin-left: 0 !important;
     grid-template-columns: 1fr;
     width: 100%;
-    grid-gap: 2.5rem !important;
-    padding-bottom: 6rem;
   }
   .section {
     padding: 2rem 2.5rem;
